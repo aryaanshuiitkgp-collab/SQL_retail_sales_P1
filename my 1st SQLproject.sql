@@ -1,32 +1,4 @@
-SELECT * FROM public.retail_sales
-ORDER BY transactions_id ASC;
-
-SELECT * FROM retail_sales
-LIMIT 10;
-
---
-SELECT * FROM retail_sales
-WHERE 
-		sale_date IS NULL
-		or
-		sale_time IS NULL
-		or
-		age IS NULL
-		or
-		customer_id IS NULL
-		or
-		category IS NULL
-		or
-		quantity IS NULL
-		or
-		price_per_unit IS NULL
-		or
-		cogs IS NULL
-		or
-		total_sale IS NULL;
-		
 --DATA cleaning--
-
 DELETE FROM retail_sales
 WHERE 
 		sale_date IS NULL
